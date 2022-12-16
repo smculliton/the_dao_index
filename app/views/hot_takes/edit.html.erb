@@ -1,0 +1,8 @@
+
+<center><h2>Is This a Hot Take?</h2>
+<h3><%= @hot_take.description %></h3>
+
+
+<p><%= button_to 'Oh For Sure',  "/hottakes/#{@hot_take.id}", method: :patch, params: { vote: 0 } %></p>
+<p><%= button_to 'Na.. Mikes Spot On Here',  "/hottakes/#{@hot_take.id}", method: :patch, params: { vote: 0 } %></p>
+</center>
