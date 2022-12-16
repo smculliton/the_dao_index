@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/', to: 'welcome#index'
   get '/hottakes/:id/vote', to: 'hot_takes#edit'
   patch '/hottakes/:id', to: 'hot_takes#update'
+  get '/hottakes', to: 'hot_takes#index'
 end

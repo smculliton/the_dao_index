@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2022_12_16_203840) do
 
   create_table "hot_takes", force: :cascade do |t|
     t.string "description"
-    t.integer "votes", default: 0
-    t.integer "no_votes", default: 0
+    t.integer "hot_votes", default: 0
+    t.integer "cold_votes", default: 0
   end
 
 end

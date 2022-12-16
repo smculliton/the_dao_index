@@ -1,0 +1,15 @@
+
+<h2>Mike's Hottest Takes</h2>
+  <ol>
+    <% @hottest.each do |take| %>
+      <li><%= "#{take.description}: Heat Level #{take.index}" %></li>
+    <% end %>
+  </ol>
+
+  
+<h2>Mike's Coldest Takes</h2>  
+  <ol>
+    <% @coldest.each do |take| %>
+      <li><%= "#{take.description}: Heat Level #{take.index}" %></li>
+    <% end %>
+  </ol>
