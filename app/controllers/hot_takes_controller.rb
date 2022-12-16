@@ -11,13 +11,12 @@ class HotTakesController < ApplicationController
   end
 
   def update
-
     hot_take = HotTake.find(params[:id])
 
-    if params[:vote] == 0
-      hot_take.update(votes: (hot_take.hot_votes + 1))
+    if params[:vote] == 'hot'
+      hot_take.update(hot_votes: (hot_take.hot_votes + 1))
     else
-      hot_take.update(no_votes: (hot_take.cold_votes + 1))
+      hot_take.update(cold_votes: (hot_take.cold_votes + 1))
     end
 
     redirect_to '/hottakes'
