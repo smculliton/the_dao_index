@@ -10,9 +10,13 @@
   </head>
 
   <body>
-  <%= button_to 'Home', '/', method: :get %>
-  <%= button_to 'Hit Me With a Hot Take!!', '/hottakes/random/vote', method: :get %>
-  <center><h1>The Dao Index</h2></center>
+  <header class="p-3 bg-danger text-white">
+    <div class="btn-group btn-group-sm" role="group">
+      <%= button_to 'Home', '/', method: :get, class: "btn btn-outline-warning" %>
+      <%= button_to 'Hit Me With a Hot Take!!', '/hottakes/random/vote', method: :get, class: "btn btn-outline-light" %>
+    </div>
+    <center><h1>The Dao Index</h2></center>
+  </header>
     <%= yield %>
   </body>
 </html>
