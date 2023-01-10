@@ -7,6 +7,8 @@ class HotTakesController < ApplicationController
   def edit
     if params[:id] == 'random'
       @hot_take = HotTake.order('RANDOM()').first
+    else
+      @hot_take = HotTake.find(params[:id])
     end
   end
 
@@ -20,5 +22,20 @@ class HotTakesController < ApplicationController
     end
 
     redirect_to '/hottakes'
+  end
+
+  def new
+  end
+
+  def create
+    hottake = HotTake.create!(hot_take_params)
+
+    redirect_to "/hottakes/#{hottake.id}/vote"
+  end
+
+  private
+
+  def hot_take_params
+    params.permit(:description)
   end
 end

@@ -20,5 +20,4 @@ ActiveRecord::Schema.define(version: 2022_12_16_203840) do
     t.integer "hot_votes", default: 0
     t.integer "cold_votes", default: 0
   end
-
 end

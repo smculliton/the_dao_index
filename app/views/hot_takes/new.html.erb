@@ -1,0 +1,12 @@
+<center>
+<br>
+<h2>Mike just said something crazy...</h2>
+<h3>Create a new Hot Take to vote on</h3>
+<br>
+<%= form_with url: '/hottakes', local: true do |f| %>
+  <%= f.label :description, "What'd he say this time?" %>
+  <%= f.text_field :description %>
+  <br><br>
+  <%= f.submit 'Submit This Spicy Take', class: 'btn btn-dark' %>
+<% end %>
+</center>
