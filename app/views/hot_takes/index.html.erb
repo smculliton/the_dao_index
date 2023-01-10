@@ -1,15 +1,60 @@
+<br>
+<div class='container-sm'>
+<center><h2>Mike's Hottest Takes</h2> </center>
 
-<h2>Mike's Hottest Takes</h2>
-  <ol>
-    <% @hottest.each do |take| %>
-      <li><%= "#{take.description}: Heat Level #{take.index}" %></li>
-    <% end %>
-  </ol>
+<center>
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Take</th>
+      <th>Heat Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @hottest.each_with_index do |take, i| %>
+        <th scope="row"><%= i + 1 %></th>
+        <td><%= take.description %></td>
+        <td><% take.index.times do |i| %>
+              &#127798;
+            <% end %>
+        </td>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+</center>
+</div>
 
-  
-<h2>Mike's Coldest Takes</h2>  
-  <ol>
-    <% @coldest.each do |take| %>
-      <li><%= "#{take.description}: Heat Level #{take.index}" %></li>
-    <% end %>
-  </ol>
+
+<div class='container-sm'> 
+
+<center><h2>Mike's Coldest Takes</h2></center>
+
+<center>
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Take</th>
+      <th>Heat Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @coldest.each_with_index do |take, i| %>
+        <th scope="row"><%= i + 1 %></th>
+        <td><%= take.description %></td>
+        <td><% take.index.abs.times do |i| %>
+              &#129398;
+            <% end %>
+        </td>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+</center>
+</div>

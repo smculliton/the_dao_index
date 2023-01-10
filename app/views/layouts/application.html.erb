@@ -12,10 +12,12 @@
   <body>
   <header class="p-3 bg-danger text-white">
     <div class="btn-group btn-group-sm" role="group">
-      <%= button_to 'Home', '/', method: :get, class: "btn btn-outline-warning" %>
-      <%= button_to 'Hit Me With a Hot Take!!', '/hottakes/random/vote', method: :get, class: "btn btn-outline-light" %>
+      <%= button_to 'Home', '/', method: :get, class: "btn btn-outline-light btn-sm" %>
+      <%= button_to 'Hit Me With a Hot Take!!', '/hottakes/random/vote', method: :get, class: "btn btn-outline-light btn-sm" %>
+      <%= button_to 'Record a New Hot Take', '/hottakes/create', method: :get, class: "btn btn-outline-light btn-sm" %>
     </div>
-    <center><h1>The Dao Index</h2></center>
+    <center><h1>The Dao Index</h1></center>
+    <center><p><i>An app to track Dao-isms</i></p></center>
   </header>
     <%= yield %>
   </body>
