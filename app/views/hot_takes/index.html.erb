@@ -42,16 +42,16 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <% @coldest.each_with_index do |take, i| %>
+    <% @coldest.each_with_index do |take, i| %>
+      <tr> 
         <th scope="row"><%= i + 1 %></th>
         <td><%= take.description %></td>
         <td><% take.index.abs.times do |i| %>
               &#129398;
             <% end %>
         </td>
-      <% end %>
-    </tr>
+      </tr>
+    <% end %>
   </tbody>
 </table>
 </center>
