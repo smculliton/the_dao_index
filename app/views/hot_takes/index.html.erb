@@ -15,7 +15,7 @@
     <% @hottest.each_with_index do |take, i| %>
     <tr>
         <th scope="row"><%= i + 1 %></th>
-        <td><%= take.description %></td>
+        <td><%= take.description %> <%= link_to 'Vote', "/hottakes/#{take.id}/vote", class: "badge badge-danger text-danger" %> </td>
         <td><% take.index.times do |i| %>
               &#127798;
             <% end %>
@@ -45,7 +45,7 @@
     <% @coldest.each_with_index do |take, i| %>
       <tr> 
         <th scope="row"><%= i + 1 %></th>
-        <td><%= take.description %></td>
+        <td><%= take.description %> <%= link_to 'Vote', "/hottakes/#{take.id}/vote", class: "badge badge-danger text-danger" %></td>
         <td><% take.index.abs.times do |i| %>
               &#129398;
             <% end %>
