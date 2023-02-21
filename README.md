@@ -17,11 +17,8 @@ An app that tracks all the *ahem* **wisdom** shared by enigmatic [Turing School 
 The app can be found deployed [here](https://the-dao-index.herokuapp.com/)
 
 ## Learning Goals
-
-
-## Database Design
-
-WIP
+- Style a frontend using Bootstrap and CSS classes
+- Design a user-friendly monolithic app from the ground up
 
 
 ## Technologies
@@ -34,10 +31,10 @@ Clone the repo by running `git clone` with the copied URL onto your local machin
 
 Then, run the following commands:
 ```
-cd lunch_and_learn
+cd the_dao_index
 bundle install
 rails db:{drop,create,migrate}
 rails s
 ```
 
-Lastly, head to your web browser or Postman. The base URL is `localhost:3000` and endpoints are listed below.
+Visit `localhost:3000` in your browser. 
