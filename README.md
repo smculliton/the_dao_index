@@ -42,10 +42,13 @@ Visit `localhost:3000` in your browser.
 
 ## Screenshots
 
-<img width="1388" alt="Screen Shot 2023-02-21 at 2 21 50 PM" src="https://user-images.githubusercontent.com/108320490/220461512-f8162e32-79f7-4d70-bf8f-e3d0416bbf87.png">
+<p align="center">
+<img width=50% height=50% alt="Screen Shot 2023-02-21 at 2 21 50 PM" src="https://user-images.githubusercontent.com/108320490/220461512-f8162e32-79f7-4d70-bf8f-e3d0416bbf87.png">
 
 
-<img width="1381" alt="Screen Shot 2023-02-21 at 2 22 14 PM" src="https://user-images.githubusercontent.com/108320490/220461498-9cbb278c-45dd-4f05-ae46-99d330bf5829.png">
+<img width=50% height=50% alt="Screen Shot 2023-02-21 at 2 22 14 PM" src="https://user-images.githubusercontent.com/108320490/220461498-9cbb278c-45dd-4f05-ae46-99d330bf5829.png">
+  
+ </p>
 
 
 
