@@ -3,7 +3,7 @@
 ## Table of Contents
 * [General Info](#general-info)
 * [Learning Goals](#learning-goals)
-* [Database Design](#database-design)
+<!-- * [Database Design](#database-design) -->
 * [Technologies](#technologies)
 * [Usage](#usage)
 
