@@ -1,9 +1,10 @@
 # README
 
+<img src=https://media.giphy.com/media/q9O2731zgK9VbcrgF5/giphy.gif align=right width=30% height=30%>
+
 ## Table of Contents
 * [General Info](#general-info)
 * [Learning Goals](#learning-goals)
-<!-- * [Database Design](#database-design) -->
 * [Technologies](#technologies)
 * [Usage](#usage)
 
